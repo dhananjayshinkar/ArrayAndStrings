@@ -26,6 +26,8 @@
  
  $obj->addElements($array);
 
+ $obj->arrayValues($array_count);
+
  class main
  {	
  	public function __construct()
@@ -114,6 +116,13 @@
 		print_r($array);
 		echo '<br>';
 		echo "sum = " . array_sum($array) . "\n";
+		echo '<hr>';
+	}
+
+	public function arrayValues($array_count)
+	{
+		echo '<h1>Array Values Function</h1>';
+		print_r(array_values($array_count));
 		echo '<hr>';
 	}
 
