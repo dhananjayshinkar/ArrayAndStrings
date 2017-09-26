@@ -28,6 +28,11 @@
 
  $obj->arrayValues($array_count);
 
+ 		$num = 5;
+		$location = 'tree';
+		$format = 'There are %d monkeys in the %s';
+		$obj->formatString($num,$location,$format);
+
  class main
  {	
  	public function __construct()
@@ -123,6 +128,15 @@
 	{
 		echo '<h1>10. Array Values Function</h1>';
 		print_r(array_values($array_count));
+		echo '<hr>';
+		echo '<h1> String Functions </h1>';
+		echo '<hr>';
+	}
+
+	public function formatString($num,$location,$format)
+	{
+		echo '<h1>1. Format String Function</h1>';
+		echo sprintf($format, $num, $location);
 		echo '<hr>';
 	}
 
