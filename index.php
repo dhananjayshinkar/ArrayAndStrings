@@ -42,6 +42,7 @@
 
 		$str1='Hello World';
 		$obj->splitString($str1);
+		$obj->countWord($str1);
 
 
 
@@ -176,8 +177,19 @@
 
 	public function splitString($str1)
 	{
-		echo '<h1>4. shuffle String Function</h1>';
+		echo '<h1>5. Split String Function</h1>';
 		print_r (str_split($str1,5));
+		echo '<hr>';
+	}
+
+	public function countWord($str1)
+	{
+		echo '<h1>6. String Word Count Function</h1>';
+		echo '<h4>String : </h4>';
+		echo $str1;
+		echo '<br>';
+		echo '<h4>word Count : </h4>';
+		print_r (str_word_count($str1,0));
 		echo '<hr>';
 	}
 
