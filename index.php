@@ -48,6 +48,7 @@
 
 		$str2 = "Mary Had A Little Lamb and She LOVED It So";
 		$obj->toUpper($str2);
+		$obj->toLower($str2);
 
 
 
@@ -148,7 +149,7 @@
 		echo '<h1>10. Array Values Function</h1>';
 		print_r(array_values($array_count));
 		echo '<hr>';
-		echo '<h1> String Functions </h1>';
+		echo '<h1>------------- String Functions --------------</h1>';
 		echo '<hr>';
 	}
 
@@ -228,6 +229,17 @@
 		echo '<br>';
 		echo '<h4>Uppercased string : </h4>';
 		echo strtoupper($str2);
+		echo '<hr>';
+	}
+
+	public function toLower($str2)
+	{
+		echo '<h1>10. String to lowercase Function</h1>';
+		echo '<h4>String : </h4>';
+		echo $str2;
+		echo '<br>';
+		echo '<h4>Lowercased string : </h4>';
+		echo strtolower($str2);
 		echo '<hr>';
 	}
 
