@@ -46,6 +46,9 @@
 		$obj->stringLength($name);
 		$obj->reverseString($name);
 
+		$str2 = "Mary Had A Little Lamb and She LOVED It So";
+		$obj->toUpper($str2);
+
 
 
 
@@ -214,6 +217,17 @@
 		echo '<br>';
 		echo '<h4>Reversed string : </h4>';
 		echo strrev($name);
+		echo '<hr>';
+	}
+
+	public function toUpper($str2)
+	{
+		echo '<h1>9. String to uppercase Function</h1>';
+		echo '<h4>String : </h4>';
+		echo $str2;
+		echo '<br>';
+		echo '<h4>Uppercased string : </h4>';
+		echo strtoupper($str2);
 		echo '<hr>';
 	}
 
