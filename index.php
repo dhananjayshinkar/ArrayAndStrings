@@ -38,6 +38,7 @@
 		$name = 'Dhananjay';
 		$obj->padString($name);
 		$obj->repeatString($location);
+		$obj->shuffleString($name);
 
 
 
@@ -160,6 +161,13 @@
 	{
 		echo '<h1>3. Repeat String Function</h1>';
 		echo str_repeat($location, 10);
+		echo '<hr>';
+	}
+
+	public function shuffleString($name)
+	{
+		echo '<h1>4. shuffle String Function</h1>';
+		echo str_shuffle($name);
 		echo '<hr>';
 	}
 
