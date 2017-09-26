@@ -28,10 +28,19 @@
 
  $obj->arrayValues($array_count);
 
+ /*--string variables--*/
+
  		$num = 5;
 		$location = 'tree';
 		$format = 'There are %d monkeys in the %s';
 		$obj->formatString($num,$location,$format);
+
+		$name = 'Dhananjay';
+		$obj->padString($name);
+		$obj->repeatString($location);
+
+
+
 
  class main
  {	
@@ -137,6 +146,20 @@
 	{
 		echo '<h1>1. Format String Function</h1>';
 		echo sprintf($format, $num, $location);
+		echo '<hr>';
+	}
+
+	public function padString($name)
+	{
+		echo '<h1>2. Padding String Function</h1>';
+		echo str_pad($name, 20, "--", STR_PAD_BOTH);
+		echo '<hr>';
+	}
+
+	public function repeatString($location)
+	{
+		echo '<h1>3. Repeat String Function</h1>';
+		echo str_repeat($location, 10);
 		echo '<hr>';
 	}
 
