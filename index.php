@@ -23,6 +23,8 @@
  $obj->prodArray($array);
 
  $obj->reverseArray($array);
+ 
+ $obj->addElements($array);
 
  class main
  {	
@@ -103,6 +105,16 @@
 		 echo '<h4>Reversed Array : </h4>';
 		 print_r(array_reverse($array));
 		 echo '<hr>';
+	}
+
+	public function addElements($array)
+	{
+		echo '<h1>Array Sum Function</h1>';
+		echo '<h4>Array Elements: </h4>';
+		print_r($array);
+		echo '<br>';
+		echo "sum = " . array_sum($array) . "\n";
+		echo '<hr>';
 	}
 
 	public function __destruct()
