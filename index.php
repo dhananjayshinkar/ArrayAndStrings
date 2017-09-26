@@ -18,6 +18,8 @@
 
  $obj->mergeArray($array,$chunk_array);
 
+ $obj->padArray($chunk_array);
+
  class main
  {	
  	public function __construct()
@@ -63,7 +65,14 @@
 	public function mergeArray($array,$chunk_array)
 	{
 		 echo '<h1>Array Merge Function</h1>';
-		 print_r(array_merge_recursive($array,$chunk_array));
+		 print_r(array_merge($array,$chunk_array));
+		 echo '<hr>';
+	}
+
+	public function padArray($chunk_array)
+	{
+		 echo '<h1>Array Pad Function</h1>';
+		 print_r(array_pad($chunk_array, 7, -1));
 		 echo '<hr>';
 	}
 
