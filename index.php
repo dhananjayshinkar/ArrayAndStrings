@@ -44,6 +44,7 @@
 		$obj->splitString($str1);
 		$obj->countWord($str1);
 		$obj->stringLength($name);
+		$obj->reverseString($name);
 
 
 
@@ -202,6 +203,17 @@
 		echo '<br>';
 		echo '<h4>String Length : </h4>';
 		echo strlen($name);
+		echo '<hr>';
+	}
+
+	public function reverseString($name)
+	{
+		echo '<h1>8. String reverse Function</h1>';
+		echo '<h4>String : </h4>';
+		echo $name;
+		echo '<br>';
+		echo '<h4>Reversed string : </h4>';
+		echo strrev($name);
 		echo '<hr>';
 	}
 
