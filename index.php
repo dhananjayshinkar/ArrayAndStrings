@@ -43,6 +43,7 @@
 		$str1='Hello World';
 		$obj->splitString($str1);
 		$obj->countWord($str1);
+		$obj->stringLength($name);
 
 
 
@@ -190,6 +191,17 @@
 		echo '<br>';
 		echo '<h4>word Count : </h4>';
 		print_r (str_word_count($str1,0));
+		echo '<hr>';
+	}
+
+	public function stringLength($name)
+	{
+		echo '<h1>7. String length Function</h1>';
+		echo '<h4>String : </h4>';
+		echo $name;
+		echo '<br>';
+		echo '<h4>String Length : </h4>';
+		echo strlen($name);
 		echo '<hr>';
 	}
 
