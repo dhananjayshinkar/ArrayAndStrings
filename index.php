@@ -22,6 +22,8 @@
  
  $obj->prodArray($array);
 
+ $obj->reverseArray($array);
+
  class main
  {	
  	public function __construct()
@@ -90,6 +92,17 @@
 		 echo "product = " . array_product($array) . "\n";
 		 echo '<hr>';
 
+	}
+
+	public function reverseArray($array)
+	{
+		 echo '<h1>Array Reverse Function</h1>';
+		 echo '<h4>Original Array : </h4>';
+		 print_r($array);
+		 echo '<br>';
+		 echo '<h4>Reversed Array : </h4>';
+		 print_r(array_reverse($array));
+		 echo '<hr>';
 	}
 
 	public function __destruct()
