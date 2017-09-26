@@ -40,6 +40,9 @@
 		$obj->repeatString($location);
 		$obj->shuffleString($name);
 
+		$str1='Hello World';
+		$obj->splitString($str1);
+
 
 
 
@@ -168,6 +171,13 @@
 	{
 		echo '<h1>4. shuffle String Function</h1>';
 		echo str_shuffle($name);
+		echo '<hr>';
+	}
+
+	public function splitString($str1)
+	{
+		echo '<h1>4. shuffle String Function</h1>';
+		print_r (str_split($str1,5));
 		echo '<hr>';
 	}
 
