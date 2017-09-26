@@ -16,6 +16,8 @@
  $array_count = array(1, "hello", 1, "world", "hello");
  $obj->countArray($array_count);
 
+ $obj->mergeArray($array,$chunk_array);
+
  class main
  {	
  	public function __construct()
@@ -56,6 +58,13 @@
 		echo '<h1>Array Count Function</h1>';
 		print_r(array_count_values($array_count));
 		echo '<hr>';
+	}
+
+	public function mergeArray($array,$chunk_array)
+	{
+		 echo '<h1>Array Merge Function</h1>';
+		 print_r(array_merge_recursive($array,$chunk_array));
+		 echo '<hr>';
 	}
 
 	public function __destruct()
