@@ -9,6 +9,9 @@
 
  $input_array = array("FirSt" => 1, "SecOnd" => 4);
  $obj->changeCase($input_array);
+ 
+ $chunk_array = array('a', 'b', 'c', 'd', 'e');
+ $obj->splitArray($chunk_array);
 
  class main
  {	
@@ -35,6 +38,13 @@
 	{
 		echo '<h1>Array Case Change Function</h1>';
 		print_r(array_change_key_case($input_array,CASE_UPPER));
+		echo '<hr>';
+	}
+
+	public function splitArray($chunk_array)
+	{
+		echo '<h1>Array Chunk Function</h1>';
+		print_r(array_chunk($chunk_array, 2, true));
 		echo '<hr>';
 	}
 
