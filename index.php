@@ -19,6 +19,8 @@
  $obj->mergeArray($array,$chunk_array);
 
  $obj->padArray($chunk_array);
+ 
+ $obj->prodArray($array);
 
  class main
  {	
@@ -72,8 +74,22 @@
 	public function padArray($chunk_array)
 	{
 		 echo '<h1>Array Pad Function</h1>';
+		 echo '<h4>Before padding</h4>';
+		 print_r($chunk_array);
+		 echo '<h4>after padding</h4>';
 		 print_r(array_pad($chunk_array, 7, -1));
 		 echo '<hr>';
+	}
+
+	public function prodArray($array)
+	{
+		 echo '<h1>Array Product Function</h1>';
+		 echo '<h4>Array Values : </h4>';
+		 print_r($array);
+		 echo '<br>';
+		 echo "product = " . array_product($array) . "\n";
+		 echo '<hr>';
+
 	}
 
 	public function __destruct()
