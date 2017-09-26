@@ -44,42 +44,42 @@
 
 	public function printArray($array) 
 	{
-	        echo '<h1>Array print function</h1>';
+	    echo '<h1>1. Array print function</h1>';
 		print_r($array);
 		echo '<hr>';
 	}
 
 	public function changeCase($input_array)
 	{
-		echo '<h1>Array Case Change Function</h1>';
+		echo '<h1>2. Array Case Change Function</h1>';
 		print_r(array_change_key_case($input_array,CASE_UPPER));
 		echo '<hr>';
 	}
 
 	public function splitArray($chunk_array)
 	{
-		echo '<h1>Array Chunk Function</h1>';
+		echo '<h1>3. Array Chunk Function</h1>';
 		print_r(array_chunk($chunk_array, 2, true));
 		echo '<hr>';
 	}
 
 	public function countArray($array_count)
 	{
-		echo '<h1>Array Count Function</h1>';
+		echo '<h1>4. Array Count Function</h1>';
 		print_r(array_count_values($array_count));
 		echo '<hr>';
 	}
 
 	public function mergeArray($array,$chunk_array)
 	{
-		 echo '<h1>Array Merge Function</h1>';
+		 echo '<h1>5. Array Merge Function</h1>';
 		 print_r(array_merge($array,$chunk_array));
 		 echo '<hr>';
 	}
 
 	public function padArray($chunk_array)
 	{
-		 echo '<h1>Array Pad Function</h1>';
+		 echo '<h1>6. Array Pad Function</h1>';
 		 echo '<h4>Before padding</h4>';
 		 print_r($chunk_array);
 		 echo '<h4>after padding</h4>';
@@ -89,7 +89,7 @@
 
 	public function prodArray($array)
 	{
-		 echo '<h1>Array Product Function</h1>';
+		 echo '<h1>7. Array Product Function</h1>';
 		 echo '<h4>Array Values : </h4>';
 		 print_r($array);
 		 echo '<br>';
@@ -100,7 +100,7 @@
 
 	public function reverseArray($array)
 	{
-		 echo '<h1>Array Reverse Function</h1>';
+		 echo '<h1>8. Array Reverse Function</h1>';
 		 echo '<h4>Original Array : </h4>';
 		 print_r($array);
 		 echo '<br>';
@@ -111,7 +111,7 @@
 
 	public function addElements($array)
 	{
-		echo '<h1>Array Sum Function</h1>';
+		echo '<h1>9. Array Sum Function</h1>';
 		echo '<h4>Array Elements: </h4>';
 		print_r($array);
 		echo '<br>';
@@ -121,7 +121,7 @@
 
 	public function arrayValues($array_count)
 	{
-		echo '<h1>Array Values Function</h1>';
+		echo '<h1>10. Array Values Function</h1>';
 		print_r(array_values($array_count));
 		echo '<hr>';
 	}
